@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Teach'r{% endblock %}
+
+{% block body %}
+<h1>Prochain cours: le lundi 23 décembre<h1>
+{{ dump(courses) }}
+
+{% for courseData in courses %}
+<img src="{{ asset('images/' ~ courseData.icon1 ~ '.png' ~ courseData.icon2 ~ '.png') }}">
+    <p>
+{{ courseData.course }}<hr> Prochain cours: {{ courseData.nextCourse }}<hr>{{ courseData.student }}<hr>{{ courseData.planning }}<hr> A partir du: {{ courseData.startOfTheCourse }}<hr>{{ courseData.schedule }}<hr> {{ courseData.courseTime }}<hr>{{ courseData.teacher }}
+    </p>
+    
+{% endfor %}
+
+{% endblock %}
