@@ -3,27 +3,42 @@
 {% block title %}Mes cours{% endblock %}
 
 {% block body %}
-<h1>Bonjour, Solène<h1>
+
+    <h1>
+	🧑 Bonjour, Solène
+    <h1>
+
     <hr>
         {% include "partials/_widget.html.twig" %}
     <hr>
 
-<p>
-    Prendre un cours régulier 
-    This is a wider card with supporting text below as a natural lead-in to additional content. This contente is a little bit longer.
-</p>
-   <a href="{{ path('regular_course')}}" class="btn btn-secondary">Réserver</a>
-<p>
-    Prendre un cours ponctuel 
-    This is a wider card with supporting text below as a natural lead-in to additional content. This contente is a little bit longer.
-</p>
-    <input type="submit" value="Réserver" class="btn btn-secondary">
 
-<p>
-    Réserver un stage
-    This is a wider card with supporting text below as a natural lead-in to additional content. This contente is a little bit longer.
-</p>
-    <input type="submit" value="Réserver" class="btn btn-secondary">
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm">
+            <p>
+               <h3>Prendre un cours régulier</h3>
+                This is a wider card with supporting text below as a natural lead-in to additional content. This contente is a little bit longer.
+            </p>
+        
+            <a href="{{ path('regular_course')}}" class="btn btn-secondary">Réserver</a>
+        </div>
+
+        <div class="col-sm">
+            <p>
+                <h3>Prendre un cours ponctuel</h3>
+                This is a wider card with supporting text below as a natural lead-in to additional content. This contente is a little bit longer.
+            </p>
+                <input type="submit" value="Réserver" class="btn btn-secondary">
+        </div>  
+        <div class="col-sm">
+            <p>
+                <h3>Réserver un stage</h3>
+                This is a wider card with supporting text below as a natural lead-in to additional content. This contente is a little bit longer.
+            </p>
+                <input type="submit" value="Réserver" class="btn btn-secondary">
+        </div>
 
 
 

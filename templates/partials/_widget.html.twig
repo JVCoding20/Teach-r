@@ -1,3 +1,5 @@
-{% set widgetCourseDate = app.session.get('widget_course') %}
 
-<h2>Prochain cours {{ widgetCourseDate.date }}{{ widgetCourseDate.mycourse }}</h2>
+
+{% set widgetCourseDate = app.session.get('widget_course') %}
+<h2>Prochain cours {{ widgetCourseDate.date }}<hr>{{ widgetCourseDate.mycourse }}</h2>
+
