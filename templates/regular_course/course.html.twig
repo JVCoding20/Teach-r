@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Cours Réguliers{% endblock %}
+
+
+{% block body %}
+<h1>
+	Réserver un cours régulier
+</h1>
+
+{% for regularcourseData in regularcourse %}
+
+<p> 
+{{ regularcourseData.course }}<hr>
+{{ regularcourseData.planning}}<hr>{{ regularcourseData.schedule}}<hr>{{ regularcourseData.teacher}}<hr>
+<input type="submit" value="Réserver" class="btn btn-secondary">
+
+</p>
+
+{% endfor %}
+
+
+{% endblock %}
