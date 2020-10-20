@@ -9,7 +9,7 @@ class NextCoursesGenerator
         $randomCourse = [
             
                 'Prochain cours de Philosophie: le 13 décembre',
-                'Porchain cours de Mathématiques: le 27 octobre',
+                'Prochain cours de Mathématiques: le 27 octobre',
                 'Procahin cours de Physique: le 15 novembre',
                 'Prochain cours d\'Anglais: le 4 novembre'
             ];
