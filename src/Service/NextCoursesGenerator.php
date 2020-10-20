@@ -8,10 +8,10 @@ class NextCoursesGenerator
     {
         $randomCourse = [
             
-                ["salut"],
-                ["les jeunes"],
-                ["course3"],
-                ["course4"]
+                'Prochain cours de Philosophie: le 13 décembre',
+                'Porchain cours de Mathématiques: le 27 octobre',
+                'Procahin cours de Physique: le 15 novembre',
+                'Prochain cours d\'Anglais: le 4 novembre'
             ];
         return $randomCourse[mt_rand(0, count($randomCourse) -1)];
     }
