@@ -3,16 +3,18 @@
 {% block body %}
 
 <div class="d-flex flex-row justify-content-between mb-5">
-<h1>Prochain cours: le lundi 23 décembre<h1>
+<h1 class="display-4">Prochain cours: le lundi 23 décembre<h1>
 </div>
 
 
 {% for courseId, courseData in courses %}
-<div class="container">
-    <div class="row">
+<div class ="container">
+<div class="jumbotron">
+   
 
-        <div class="col-sm-6">
-            <a href ="{{ path('select_course', {'id': courseId}) }}"> {{ courseData.course }}</a><hr> Prochain cours: {{ courseData.nextCourse }}<hr>
+        
+            <h1 class="display-6">
+            <a href ="{{ path('select_course', {'id': courseId}) }}"> {{ courseData.course }}</a></h1> <h2 class="display-8">Prochain cours: {{ courseData.nextCourse }}</h2><hr>
             <img src="{{ asset('images/' ~ courseData.icon1 ~ '.png') }}" width="40">
             {{ courseData.student }}<hr>
             <img src="{{ asset('images/' ~ courseData.icon2 ~ '.png') }}" width="40"> {{ courseData.planning }}<hr>
@@ -20,6 +22,9 @@
             <img src="{{ asset('images/' ~ courseData.icon3 ~ '.png') }}" width="40"> {{ courseData.schedule }}<hr> 
             {{ courseData.courseTime }}<hr>
             <img src="{{ asset('images/' ~ courseData.icon4 ~ '.png') }}" width="40"> {{ courseData.teacher }}<hr>
+
+            <a href="{{ path('regular_course')}}" class="btn btn-secondary btn-warning btn-lg btn-block">Détails</a>
+
         </div>
     </div>
 </div>
